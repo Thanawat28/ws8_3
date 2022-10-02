@@ -10,7 +10,7 @@
 <body>
 <?php
 
-$stmt = $pdo->prepare("SELECT * FROM member");
+$stmt = $pdo->prepare(""SELECT DISTINCT* FROM member");
 
 
 $stmt->execute();
