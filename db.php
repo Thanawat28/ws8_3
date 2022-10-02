@@ -10,7 +10,7 @@
 <body>
 <?php
 
-$stmt = $pdo->prepare("SELECT * FROM member product");
+$stmt = $pdo->prepare("SELECT * FROM member");
 
 
 $stmt->execute();
