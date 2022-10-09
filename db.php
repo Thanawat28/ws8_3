@@ -10,14 +10,15 @@
 <body>
 <?php
 
-$stmt = $pdo->prepare(""SELECT DISTINCT* FROM member");
+$stmt = $pdo->prepare("SELECT DISTINCT* FROM    member");
 $stmt->execute();
+
 
 while ($row = $stmt->fetch()) { 
 echo "ชื่อสมาชิก: ".$row["name"]."<br>";
 echo "ที่อยู่: ".$row["address"]."<br>";
 echo "อีเมลล์: ".$row["email"]."<br>";
-echo "<img src = 'imgws3/$x.jpg'"."<br>";
+echo "<img src = 'img/".$row["username"].".jpg'>"."<br>" ;
 echo "<br>";
 echo "<hr>";
 }
